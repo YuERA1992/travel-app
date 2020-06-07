@@ -1,12 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    
+    {{message}}
   </div>
 </template>
+
+<script>
+import Vue from 'vue'
+// import App from './App.vue'
+// import router from './router'
+// import store from './store'
+
+Vue.config.productionTip = false
+
+export default {
+  name: 'App',
+  data() {
+    return{
+      message:'ちんちん'
+
+    }
+  }
+}
+
+</script>
+
 
 <style>
 #app {
